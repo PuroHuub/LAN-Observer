@@ -1,4 +1,5 @@
 import logging
+import reader
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(
@@ -26,6 +27,7 @@ ascii_snek = """\
 
 def main():
     logger.info(f"{ascii_snek}welcome to SnakeObserver")
+    logger.info(f"{reader.read_file()}")
 
 if __name__ == "__main__":
     main()
