@@ -1,5 +1,5 @@
 def read_file():
-    file = "c:/Users/Hp/LANobserver/targets.txt"
+    file = "c:/Users/Hp/LANobserver/LAN-Observer/targets.txt"
     
     file_open = open(file, 'r')
     
