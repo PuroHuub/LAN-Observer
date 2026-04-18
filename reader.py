@@ -1,5 +1,7 @@
+import pathlib
+
 def read_file():
-    file = "c:/Users/Hp/LANobserver/LAN-Observer/targets.txt"
+    file = pathlib.Path("targets.txt")
     
     file_open = open(file, 'r')
     
