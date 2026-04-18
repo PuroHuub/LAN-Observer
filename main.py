@@ -1,5 +1,6 @@
 import logging
 import reader
+import validator
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(
@@ -27,7 +28,12 @@ ascii_snek = """\
 
 def main():
     logger.info(f"{ascii_snek}welcome to SnakeObserver")
-    logger.info(f"{reader.read_file()}")
+    readed_ipaddress = reader.read_file()
+    logger.info(f"{readed_ipaddress}")
+    
+    result_validator = validator.read_ipaddress(readed_ipaddress)
+    logger.info(f"Validate and Invaid data: {result_validator}")
+
 
 if __name__ == "__main__":
     main()
