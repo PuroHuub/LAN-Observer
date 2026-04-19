@@ -1,13 +1,13 @@
 import ipaddress
 
-def read_ipaddress(ipv4: list) -> ipaddress.IPv4Address:
+def validation_ipaddress(ipv4: list) -> ipaddress.IPv4Address:
     validate_data = []
     invalid_data = []
-    for list_ipv4 in ipv4:
+    for var_ipv4 in ipv4:
         try:
-            examination = ipaddress.ip_address(list_ipv4)
-            validate_data.append(list_ipv4) 
+            examination = ipaddress.ip_address(var_ipv4)
+            validate_data.append(var_ipv4) 
         except ValueError:
-            invalid_data.append(list_ipv4)
+            invalid_data.append(var_ipv4)
             
-    return validate_data, invalid_data
+    return {"valid": validate_data, "invalid": invalid_data}
