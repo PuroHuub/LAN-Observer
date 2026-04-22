@@ -3,10 +3,7 @@ import pathlib
 def read_file():
     file = pathlib.Path("targets.txt")
     
-    file_open = open(file, 'r')
-    
-    list_file = file_open.read().strip().split()
-    
-    file_open.close()
+    with open(file, 'r') as open_file:
+        list_file = open_file.read().strip().split()
     
     return list_file

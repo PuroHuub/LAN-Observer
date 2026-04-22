@@ -21,8 +21,8 @@ def main():
     readed_ipaddress = reader.read_file()
     logger.debug(f"Getted data: {readed_ipaddress}")
     
-    result_validator = validator.validation_ipaddress(readed_ipaddress)
-    print(f"{result_validator}")
+    validated_data = validator.validation_ipaddress(readed_ipaddress)
+    print(f"{validated_data}")
 
 if __name__ == "__main__":
     main()
