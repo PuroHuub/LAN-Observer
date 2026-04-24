@@ -27,6 +27,8 @@ def main():
     
     validated_data = validator.validation_ipaddress(readed_ipaddress)
     print(f"{validated_data}")
+    
+    scanner.checking(validated_data['valid'])
 
 if __name__ == "__main__":
     main()
