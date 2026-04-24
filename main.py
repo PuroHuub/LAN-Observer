@@ -2,6 +2,8 @@ import logger_config
 import reader
 import validator
 import logging
+import writer
+import scanner
 
 logger = logging.getLogger(__name__)
 
@@ -17,6 +19,8 @@ def main():
     logger_config.loggingSet()
     
     print(f"{ascii_snek}welcome to SnakeObserver")
+    
+    writer.get_ip()
     
     readed_ipaddress = reader.read_file()
     logger.debug(f"Getted data: {readed_ipaddress}")
