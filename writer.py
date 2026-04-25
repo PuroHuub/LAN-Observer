@@ -2,7 +2,7 @@ import socket
 import pathlib
 
 def get_ip():
-    file = pathlib.Path("targets.txt")
+    file = pathlib.Path("discovered_targets.txt")
     
     host_name = ''
     address_list = socket.getaddrinfo(host_name, None)
