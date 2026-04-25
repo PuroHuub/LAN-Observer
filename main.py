@@ -28,7 +28,9 @@ def main():
     validated_data = validator.validation_ipaddress(readed_ipaddress)
     print(f"{validated_data}")
     
-    scanner.checking(validated_data['valid'])
+    scannered_ipv = scanner.checking(validated_data['valid'])
+    
+    print(scannered_ipv)
 
 if __name__ == "__main__":
     main()
