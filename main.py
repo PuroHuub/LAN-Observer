@@ -28,6 +28,9 @@ def main():
     validated_data = validator.validate_ip_addresses(readed_ipaddress)
     print(f"{validated_data}")
     
+    #scanner.check_host('192.168.1.1')
+    #scanner.check_host('127.0.0.1')
+    
     scannered_ipv = scanner.checking(validated_data['valid'])
     
     print(scannered_ipv)
