@@ -1,10 +1,9 @@
-from main import logger
 import pathlib
 import logging
 
 logger = logging.getLogger(__name__)
 
-def loggingSet():
+def logging_setup():
     logging.basicConfig(
     level=logging.DEBUG, #большими потому что константа 
     filename="py_log.log",

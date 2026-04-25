@@ -16,7 +16,7 @@ ascii_snek = """\
 """
 
 def main():
-    logger_config.loggingSet()
+    logger_config.logging_setup()
     
     print(f"{ascii_snek}welcome to SnakeObserver")
     
@@ -25,7 +25,7 @@ def main():
     readed_ipaddress = reader.read_file()
     logger.debug(f"Getted data: {readed_ipaddress}")
     
-    validated_data = validator.validation_ipaddress(readed_ipaddress)
+    validated_data = validator.validate_ip_addresses(readed_ipaddress)
     print(f"{validated_data}")
     
     scannered_ipv = scanner.checking(validated_data['valid'])

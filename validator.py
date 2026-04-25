@@ -1,6 +1,6 @@
 import ipaddress
 
-def validation_ipaddress(list_ipv4: list) -> dict:
+def validate_ip_addresses(list_ipv4: list) -> dict:
     validate_data = []
     invalid_data = []
     for var_ipv4 in list_ipv4:
