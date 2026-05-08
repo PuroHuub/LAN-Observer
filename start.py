@@ -6,21 +6,18 @@ import writer_user
 
 def starting():
     print("выберите две доступные вам функции:")
-    print("--findIPV4")
-    print("--writeIPV4")
-    print("--updateIPV4")
-    print("--readIPV4")
-    print("--readFile")
-    print("--help")
-    
-    return input().strip()
+    print("findIPV4 / f")
+    print("writeIPV4 / w")
+    print("updateIPV4 / u")
+    print("readIPV4 / r")
+    print("readFile / rf")
+    print("help / h")
     
         
 def help():
-    print("--findIPV4 этой командой программа ищет все айпи в вашей LAN \n--writeIPV4 этой командой программа записывает ваши IPV4 \n--readIPV4 этой командой программа читает ранее записанные айпи \n--readFile этой командой программа читает айпишники из вашего файла путь котого вы указываете сами и не только название файла с абсолютным путем но и .txt указать должны")
+    print("findIPV4 этой командой программа ищет все айпи в вашей LAN \nwriteIPV4 этой командой программа записывает ваши IPV4 \nreadIPV4 этой командой программа читает ранее записанные айпи \nreadFile этой командой программа читает айпишники из вашего файла путь котого вы указываете сами и не только название файла с абсолютным путем но и .txt указать должны")
     
     
-
 def find_ipv4():
     writer.get_ip()
     
